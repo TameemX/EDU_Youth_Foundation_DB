@@ -555,7 +555,14 @@ GRANT SELECT, INSERT, UPDATE, ALTER, DELETE, DROP ON communication TO 'employee_
 GRANT SELECT, INSERT ON donor TO 'employee_zaid';
 GRANT SELECT ON donation TO 'employee_zaid';
 
+REVOKE SELECT ON employee FROM 'employee_zaid';
 
+
+DELETE from event WHERE eventID = 1;
+SELECT * FROM participation;
+SELECT * FROM donation;
+
+DELETE from event WHERE donationID = 1
 
 REVOKE SELECT, INSERT, UPDATE, ALTER, DELETE, DROP ON employee FROM 'employee_zaid';
 
